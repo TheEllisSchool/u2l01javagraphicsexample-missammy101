@@ -1,3 +1,5 @@
+import java.awt.Color;
+import java.awt.Font;
 import java.awt.Graphics;
 
 import javax.swing.JFrame;
@@ -20,8 +22,27 @@ public class U2L01JavaGraphicsClass extends JPanel {
 	}
 	
 	public void paintComponent(Graphics g){
-		g.drawLine(0,0,50,50);       
-		g.drawLine(50,0,50,75);
+		
+		Color balletPink = new Color (245, 201, 227);
+		
+		Color darkgrey = new Color (69, 64, 71) ; 
+
+		
+		
+	
+		g.setColor(balletPink);
+			g.fillOval(30,30,100,50) ; 
+			
+		g.setColor(darkgrey);
+			
+		g.setFont(new Font ("Arial", Font.PLAIN, 13));
+		g.drawString("sam games", 45, 50);
+		
+		g.drawString("inc", 70, 70);
+		
+		
+	
+		
 	}
 
 }
